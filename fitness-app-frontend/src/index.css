@@ -1,0 +1,111 @@
+:root {
+  /* ✨ Typography */
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* 🎨 Color Palette — soft aesthetic tones */
+  --bg-light: #fdfdfd;
+  --bg-dark: #121212;
+  --text-light: #1c1c1c;
+  --text-dark: #eaeaea;
+  --accent: #a78bfa; /* soft lavender */
+  --accent-hover: #8b5cf6;
+  --button-bg: #f5f3ff;
+  --button-bg-dark: #1f1b2e;
+
+  color-scheme: light dark;
+  color: var(--text-dark);
+  background-color: var(--bg-dark);
+
+  /* 🧠 Smoothing and readability */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🌐 Links */
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* 🧍 Body Layout */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* 🏷️ Headings */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin: 0.5em 0;
+}
+
+/* 🔘 Buttons */
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.7em 1.4em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg-dark);
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  border-color: var(--accent);
+  background-color: rgba(167, 139, 250, 0.15);
+  transform: translateY(-1px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* ☀️ Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-light);
+    background-color: var(--bg-light);
+  }
+
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+  }
+
+  button {
+    background-color: var(--button-bg);
+    color: var(--text-light);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  button:hover {
+    background-color: rgba(167, 139, 250, 0.2);
+  }
+}

@@ -4,7 +4,6 @@ A microservice-based fitness tracking app built with Spring Boot and Google Gemi
 
 ---
 
-
 **Services:**
 - **Gateway** - Entry point with Keycloak authentication
 - **User Service** - User management

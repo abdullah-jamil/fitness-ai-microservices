@@ -13,7 +13,8 @@ A microservice-based fitness tracking app built with Spring Boot and Google Gemi
 - **Config Server** - Centralized configuration
 - **Eureka** - Service discovery
 - **Kafka** - Event streaming
-![IMG_6782](https://github.com/user-attachments/assets/b6228a46-aefc-467f-877c-8c5c120fd6cc)
+<img width="1402" height="738" alt="Screenshot 2026-01-25 at 2 24 38 PM" src="https://github.com/user-attachments/assets/e0ced1c1-0ae9-4866-8a6f-a02f01ece21c" />
+
 
 ---
 
